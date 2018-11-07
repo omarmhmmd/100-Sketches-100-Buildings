@@ -1,0 +1,53 @@
+body {
+  background-color: #FFD700;
+  color: black;
+  overflow: hidden;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: helvetica;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+#globe {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  display: flex;
+  width: 90%;
+}
+
+@media (max-width: 576px) {
+  #globe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: helvetica;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 12vw;
+  }
+
+  canvas {
+    padding-top: 10%;
+    padding-left: 15%;
+  }
+
+}
