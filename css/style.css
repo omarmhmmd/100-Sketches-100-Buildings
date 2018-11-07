@@ -31,6 +31,12 @@ img {
 }
 
 @media (max-width: 576px) {
+  body {
+    background-color: black;
+    color: #FFD700;
+    overflow: hidden;
+  }
+
   #globe {
     display: flex;
     flex-direction: column;
