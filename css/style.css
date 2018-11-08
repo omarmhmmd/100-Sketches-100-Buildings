@@ -1,12 +1,12 @@
 /**** INDEX ****/
 
 body {
-  background-color: #ffd700;
+  background-color: black;
   overflow: hidden;
 }
 
 a {
-  color: black;
+  color: #ffd700;
   text-decoration: none;
 }
 
@@ -56,6 +56,7 @@ h1 {
 
 #topRect {
   font-family: helvetica;
+  background-color: #ffd700;
   border-bottom: 1px solid #000000;
   width: 100vw;
   display: flex;
@@ -78,13 +79,16 @@ h1 {
   cursor: pointer;
 }
 
-#content-rank {}
+#content-rank {
+
+}
 
 #content-rank p {
   border: 1px solid black;
   font-size: 7vw;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
+  background-color: #ffd700;
 }
 
 #content-img {
@@ -100,9 +104,9 @@ input {
 
 #slider {
   -webkit-appearance: none;
-  background: #ffd700;
-  border: 1px solid black;
-  height: 10px;
+  background: black;
+  border: 1px solid #ffd700;
+  height: 5px;
   border-radius: 100px;
   outline: none;
 }
@@ -110,11 +114,11 @@ input {
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  border: 1px solid black;
-  background: #ffd700;
+  border: 1px solid #ffd700;
+  background: black;
   cursor: pointer;
 }
 

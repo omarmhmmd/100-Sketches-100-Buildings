@@ -11,14 +11,10 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script type='text/javascript' src="json/buildings.json"></script>
-  <script type='text/javascript' src="js/100Sketches.js"></script>
   <script type='text/javascript' src='lib/planetaryjs.js'></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-
 <body>
   <div id="main-container">
-    <a id="globeLink" href="./index.html">
+    <a style = "color: black;" id="globeLink" href="./index.html">
       <div id="topRect">
         100 SKETCHES BY OMAR MOHAMMAD OF 100 BUILDINGS BY THOM MAYNE
       </div>
@@ -41,45 +37,17 @@
   </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type='text/javascript' src="js/100Sketches.js"></script>
+
+<!-- NO SCROLL ON MOBILE -->
 <script type="text/javascript">
-  var num = Math.round(Math.random() * 100);
-  new Vue({
-    el: "#main-container",
-    data: {
-      value: num,
-      images: {
-        building: 'building001.jpg'
-      },
-    },
-    methods: {
-      setImages: function() {
-        if (this.value < 10) {
-          this.value = String(this.value).padStart(2, 0);
-        }
-        if (this.value == 100) {
-          this.images.building = 'building' + this.value + '.jpg'
-        } else {
-          this.images.building = 'building0' + this.value + '.jpg'
-        }
-      }
-    },
-    beforeMount() {
-      this.setImages()
-    },
-    watch: {
-      'value': function(val, oldVal) {
-        if (val < 10) {
-          this.value = String(this.value).padStart(2, 0);
-        }
-        if (val == 100) {
-          this.images.building = 'building' + this.value + '.jpg'
-        } else {
-          this.images.building = 'building0' + this.value + '.jpg'
-        }
-      }
-    }
-  })
+  $(document).bind("touchmove", function(e) {
+    e.preventDefault();
+  });
 </script>
+<!-- NO SCROLL ON MOBILE -->
 <script src="js/globe.js" charset="utf-8"></script>
+
 
 </html>
