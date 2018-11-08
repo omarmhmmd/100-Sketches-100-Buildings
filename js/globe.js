@@ -12,7 +12,7 @@
       file: 'json/world-110m.json'
     },
     oceans: {
-      fill: '#FFD700'
+      fill: '#ffd700'
     },
     land: {
       fill: '#00'
@@ -23,7 +23,7 @@
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
   globe.loadPlugin(lakes({
-    fill: '#FFD700'
+    fill: '#ffd700'
   }));
   // The `pings` plugin draws animated pings on the globe.
   globe.loadPlugin(planetaryjs.plugins.pings());
@@ -46,7 +46,7 @@
   globe.projection.scale(175).translate([175, 175]).rotate([0, -10, 0]);
 
   // Every few hundred milliseconds, we'll draw another random ping.
-  var colors = ['red', 'yellow', 'white', 'orange', 'green', 'cyan', 'pink'];
+  var colors = ['red', 'yellow', 'orange', 'green', 'blue', 'pink'];
 
   function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -66,7 +66,7 @@
       var building = JSON.parse(text);
       var i = Math.round(Math.random() * 100);
       var color = colors[Math.floor(Math.random() * colors.length)];
-      globe.plugins.pings.add(building[i].lon, building[i].lat, { color: '#ff0000', ttl: 2000, angle:  5 });
+      globe.plugins.pings.add(building[i].lon, building[i].lat, { color: '#ffd700', ttl: 5000, angle:  5 });
     });
   }
 

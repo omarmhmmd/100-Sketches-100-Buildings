@@ -1,7 +1,20 @@
 body {
-  background-color: #FFD700;
-  color: black;
+  background-color: black;
+  color: #ffd700;
   overflow: hidden;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a span {
+  letter-spacing: -0.1em;
 }
 
 #container {
@@ -31,11 +44,6 @@ img {
 }
 
 @media (max-width: 576px) {
-  body {
-    background-color: black;
-    color: #FFD700;
-    overflow: hidden;
-  }
 
   #globe {
     display: flex;
