@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>Sketches</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type='text/javascript' src="json/buildings.json"></script>
+  <script type='text/javascript' src="js/100Sketches.js"></script>
+  <script type='text/javascript' src='lib/planetaryjs.js'></script>
+</head>
+
+<body>
+  <div id="main-container">
+    <a id="globeLink" href="./index.html">
+    <div id="topRect">
+      100 SKETCHES BY OMAR MOHAMMAD OF 100 BUILDINGS BY THOM MAYNE
+    </div>
+  </a>
+    <div id="container-sketches">
+      <div id="content-rank">
+        <p>27</p>
+      </div>
+      <div id="content-img">
+        <img src="images/building021.jpg" alt="">
+      </div>
+      <div id="globe-sketches">
+        <canvas id='rotatingGlobe' width='100' height='100'style='width: 10vw; height: 10vw; cursor: move;'></canvas>
+      </div>
+    </div>
+    <input type="range" min="1" max="100" value="50" id = "slider">
+  </div>
+</body>
+<script src="js/globe.js" charset="utf-8"></script>
+
+</html>

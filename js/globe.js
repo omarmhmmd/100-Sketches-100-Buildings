@@ -7,23 +7,42 @@
   //
   // Note that we're loading a special TopoJSON file
   // (world-110m-withlakes.json) so we can render lakes.
+  // globe.loadPlugin(planetaryjs.plugins.earth({
+  //   topojson: {
+  //     file: 'json/world-110m.json'
+  //   },
+  //   oceans: {
+  //     fill: '#ffd700'
+  //   },
+  //   land: {
+  //     fill: '#00'
+  //   },
+  //   borders: {
+  //     stroke: '#00'
+  //   }
+  // }));
+  // // Load our custom `lakes` plugin to draw lakes; see below.
+  // globe.loadPlugin(lakes({
+  //   fill: '#ffd700'
+  // }));
+
   globe.loadPlugin(planetaryjs.plugins.earth({
     topojson: {
       file: 'json/world-110m.json'
     },
     oceans: {
-      fill: '#ffd700'
+      fill: 'black'
     },
     land: {
-      fill: '#00'
+      fill: '#ffd700'
     },
     borders: {
-      stroke: '#00'
+      stroke: '#ffd700'
     }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
   globe.loadPlugin(lakes({
-    fill: '#ffd700'
+    fill: 'black'
   }));
   // The `pings` plugin draws animated pings on the globe.
   globe.loadPlugin(planetaryjs.plugins.pings());
@@ -66,7 +85,7 @@
       var building = JSON.parse(text);
       var i = Math.round(Math.random() * 100);
       var color = colors[Math.floor(Math.random() * colors.length)];
-      globe.plugins.pings.add(building[i].lon, building[i].lat, { color: '#ffd700', ttl: 5000, angle:  5 });
+      globe.plugins.pings.add(building[i].lon, building[i].lat, { color: '#000000', ttl: 5000, angle:  5 });
     });
   }
 
