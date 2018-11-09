@@ -4,7 +4,7 @@ new Vue({
   data: {
     value: num,
     images: {
-      building: 'building001.jpg'
+      building: ''
     },
   },
   methods: {

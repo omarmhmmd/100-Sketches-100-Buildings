@@ -1,12 +1,15 @@
-/**** INDEX ****/
+:root {
+  --main-bg-color: #ffd700;
+}
 
+/**** INDEX ****/
 body {
-  background-color: black;
+  background-color: var(--main-bg-color);
   overflow: hidden;
 }
 
 a {
-  color: #ffd700;
+  color: black;
   text-decoration: none;
 }
 
@@ -38,13 +41,9 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
-
-
 /**** END INDEX ****/
 
-
 /**** SKETCHES ****/
-
 #main-container {
   font-family: helvetica;
   display: flex;
@@ -55,32 +54,38 @@ h1 {
 }
 
 #topRect {
+  position: absolute;
   font-family: helvetica;
-  background-color: #ffd700;
+  background-color: var(--main-bg-color);;
   border-bottom: 1px solid #000000;
   width: 100vw;
+  height: 4%;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.5vw;
   padding: 10px;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  z-index: 2;
+}
+
+#topRect:hover {
+  height: 145px;
 }
 
 #container-sketches {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   width: 90vw;
-  align-content: center;
-}
-
-#globe-sketches {
-  display: flex;
 }
 
 #globeLink {
   cursor: pointer;
-}
-
-#content-rank {
-
 }
 
 #content-rank p {
@@ -88,7 +93,7 @@ h1 {
   font-size: 7vw;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
-  background-color: #ffd700;
+  background-color: var(--main-bg-color);;
 }
 
 #content-img {
@@ -98,14 +103,19 @@ h1 {
   align-items: center;
 }
 
+img {
+  display: flex;
+  width: 90%;
+}
+
 input {
   width: 90vw;
 }
 
 #slider {
   -webkit-appearance: none;
-  background: black;
-  border: 1px solid #ffd700;
+  background: var(--main-bg-color);;
+  border: 1px solid black;
   height: 5px;
   border-radius: 100px;
   outline: none;
@@ -117,8 +127,8 @@ input {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #ffd700;
-  background: black;
+  border: 1px solid black;
+  background: var(--main-bg-color);;
   cursor: pointer;
 }
 
@@ -135,11 +145,6 @@ figcaption {
   color: black;
 }
 
-img {
-  display: flex;
-  width: 90%;
-}
-
 .overlay {
   display: flex;
   justify-content: center;
@@ -154,7 +159,7 @@ img {
 }
 
 .overlay:hover {
-  background-color: #ffd700;
+  background-color: var(--main-bg-color);;
   outline: 1px solid black;
   cursor: help;
 }
@@ -162,8 +167,6 @@ img {
 .overlay:hover .text {
   display: flex;
 }
-
-
 /**** END SKETCHES ****/
 
 @media (max-width: 576px) {
