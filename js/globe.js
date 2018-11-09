@@ -34,10 +34,10 @@
       fill: 'black'
     },
     land: {
-      fill: '#ffd700'
+      fill: '#ffffff'
     },
     borders: {
-      stroke: '#ffd700'
+      stroke: '#ffffff'
     }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
