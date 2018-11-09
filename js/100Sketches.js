@@ -6,6 +6,7 @@ new Vue({
     images: {
       building: ''
     },
+    buildings :[]
   },
   methods: {
     setImages: function() {
@@ -18,6 +19,12 @@ new Vue({
         this.images.building = 'building0' + this.value + '.jpg'
       }
     }
+  },
+  mounted() {
+    $.getJSON('./json/buildings.json', json => {
+      this.buildings = json
+    })
+    console.log(buildings[0]);
   },
   beforeMount() {
     this.setImages()

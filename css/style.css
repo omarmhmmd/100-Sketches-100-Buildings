@@ -8,6 +8,22 @@ body {
   overflow: hidden;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.spacing {
+  letter-spacing: -0.1em;
+}
+
+hr {
+  width: 100%;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -17,9 +33,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a span {
-  letter-spacing: -0.1em;
-}
 
 #container {
   height: 100vh;
@@ -54,25 +67,46 @@ h1 {
 }
 
 #topRect {
-  position: absolute;
+  overflow: hidden;
+  position: relative;
   font-family: helvetica;
   background-color: var(--main-bg-color);;
   border-bottom: 1px solid #000000;
   width: 100vw;
-  height: 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 7%;
   font-size: 1.5vw;
-  padding: 10px;
-  position: relative;
   transition: height 0.5s;
-  -webkit-transition: height 0.5s;
   z-index: 2;
 }
 
+.description {
+  width: 45%;
+  font-size: 1.25vw;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#pText {
+  display: none;
+  opacity: 0;
+  transition: opacity 0s 1s;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
 #topRect:hover {
-  height: 145px;
+  height: 40vh;
+}
+
+#topRect:hover #pText {
+  opacity: 1;
+  transition: opacity 0s;
+  display: flex;
 }
 
 #container-sketches {
@@ -88,9 +122,13 @@ h1 {
   cursor: pointer;
 }
 
+#globe-sketches img {
+  width: 100%;
+}
+
 #content-rank p {
   border: 1px solid black;
-  font-size: 7vw;
+  font-size: 5.5vw;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
   background-color: var(--main-bg-color);;
@@ -104,7 +142,6 @@ h1 {
 }
 
 img {
-  display: flex;
   width: 90%;
 }
 
@@ -132,19 +169,6 @@ input {
   cursor: pointer;
 }
 
-figcaption {
-  position: absolute;
-  width: 100%;
-  color: #fff;
-  left: 0;
-  top: 0;
-  padding: 1em;
-  font-size: 2.35vw;
-  display: none;
-  pointer-events: none;
-  color: black;
-}
-
 .overlay {
   display: flex;
   justify-content: center;
@@ -152,10 +176,13 @@ figcaption {
   width:90%;
   height: 100%;
   position: absolute;
+  font-weight: 5vw;
 }
 
 .text {
   display: none;
+  font-size: 3vw;
+  line-height: 5vw;
 }
 
 .overlay:hover {
@@ -166,6 +193,14 @@ figcaption {
 
 .overlay:hover .text {
   display: flex;
+}
+
+#dataConfig p {
+  font-weight: lighter;
+  text-align: right;
+}
+#dataFill p {
+  text-align: left;
 }
 /**** END SKETCHES ****/
 

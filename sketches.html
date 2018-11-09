@@ -12,13 +12,26 @@
   <link rel="stylesheet" href="css/style.css">
   <script type='text/javascript' src="json/buildings.json"></script>
   <script type='text/javascript' src='lib/planetaryjs.js'></script>
-<body>
-  <div id="main-container">
-    <a style = "color: black;" id="globeLink" href="./index.html">
-      <div id="topRect">
-          100 SKETCHES BY OMAR MOHAMMAD OF 100 BUILDINGS BY THOM MAYNE
-      </div>
-    </a>
+
+  <body>
+    <div id="main-container">
+      <a style="color: black; text-decoration: none" id="globeLink" href="./index.html">
+        <div id="topRect">
+          <div id="title">100 SKETCHES OF 100 BUILDINGS</div>
+          <div id="pText">
+            <div class="description">
+              <span>100 Sketches of 100 Buildings</span> is an architectural drawing project that was inspired by the book <span class="underline">100 Buildings</span>. Produced by The Now Institute with a foreword by Thom Mayne, <span class="underline">100 Buildings</span> is a catalogue of the most important buildings of the 20th century.
+              This list was compiled by asking renowned architects and firms to choose the buildings they thought every student of architecture should know. The top 100 were selected based on the frequency of which they were stated. <br>              <br> A designer and aspiring architect, I wanted to study these works past their written history and descriptions, so I drew every single one, studying their forms and plans as I went. An hour to thirty minutes were spent on each sketch,
+              while another hour to thirty minutes were spent doing online research to learn more about the building a little more than the book allowed.
+            </div>
+            <div class="description">
+              This website acts as an archive to this work, and as an extension of the physical book for those that are interested. The globe below denotes the physical location of each building by pulsing dots. This was a detail that I wish were in the book, and I
+              hope this allows the reader to place themselves physically in respect to these incredible works. <br> <br> <span class = "bold">100 Sketches by Omar Mohammad of 100 Buildings by Thom Mayne </span><br> <br> Design & Drawings by Omar Mohammad <br> Programming by Omar Mohammad <br><span class="underline">100 Buildings</span> by
+              Thom Mayne <br> <br>Thank you to Sean Boyd of nabiboyd for sharing this book with me.
+            </div>
+          </div>
+        </div>
+      </a>
       <div id="container-sketches">
         <div id="content-rank">
           <p>{{value}}</p>
@@ -26,28 +39,62 @@
         <div id="content-img">
           <img v-bind:src="'./images/' + images.building">
           <div class="overlay">
-            <div class="text">Hello World</div>
+            <div class="text">
+                <div id="dataConfig">
+                  <p>
+                    Building:
+                    <br>
+                    Architect:
+                    <br>
+                    Location:
+                    <br>
+                    Year:
+                    <br>
+                    GPS:
+                    <br>
+                  </p>
+                </div>
+                <div id="dataFill">
+                  <p>
+                    {{buildings[ value - 1 ].name}}
+                    <br>
+                    {{buildings[ value - 1 ].architect}}
+                    <br>
+                    {{buildings[ value - 1 ].city}}, {{buildings[ value - 1 ].country}}
+                    <br>
+                    {{buildings[ value - 1 ].yearStart}}-{{buildings[ value - 1 ].yearFin}}
+                    <br>
+                    {{buildings[ value - 1 ].lat}}, {{buildings[ value - 1 ].lon}}
+                    <br>
+                  </p>
+                </div>
+                <!-- <li>Building: {{buildings[ value - 1 ].name}}</li>
+                <li>Architect: {{buildings[ value - 1 ].architect}}</li>
+                <li>Location: {{buildings[ value - 1 ].city}}, {{buildings[ value - 1 ].country}}</li>
+                <li>Year: {{buildings[ value - 1 ].yearStart}} - {{buildings[ value - 1 ].yearFin}}</li>
+                <li>GPS: {{buildings[ value - 1 ].lat}}, {{buildings[ value - 1 ].lon}}</li> -->
+            </div>
           </div>
         </div>
         <div id="globe-sketches">
-          <canvas id='rotatingGlobe' width='100' height='100' style='width: 10vw; height: 10vw; cursor: move;'></canvas>
+          <img src="svg/NorthAmerica.svg" alt="">
         </div>
       </div>
-    <input type="range" min="1" max="100" v-model="value" id="slider">
-  </div>
-</body>
+      <input type="range" min="1" max="100" v-model="value" id="slider">
+    </div>
+  </body>
 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script type='text/javascript' src="js/100Sketches.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script type='text/javascript' src="js/100Sketches.js"></script>
 
-<!-- NO SCROLL ON MOBILE -->
-<script type="text/javascript">
-  $(document).bind("touchmove", function(e) {
-    e.preventDefault();
-  });
-</script>
-<!-- NO SCROLL ON MOBILE -->
-<script src="js/globe.js" charset="utf-8"></script>
+  <!-- NO SCROLL ON MOBILE -->
+  <script type="text/javascript">
+    $(document).bind("touchmove", function(e) {
+      e.preventDefault();
+    });
+  </script>
+  <!-- NO SCROLL ON MOBILE -->
+  <script src="js/globe.js" charset="utf-8"></script>
 
 
 </html>
