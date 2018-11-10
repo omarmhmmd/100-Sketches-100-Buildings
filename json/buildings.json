@@ -198,7 +198,7 @@
   {
     "rank": "15",
     "name": "Seagram Building",
-    "architect": "Mies Van Der Rohe and Philip Johnson",
+    "architect": "Mies Van Der Rohe & Philip Johnson",
     "city": "New York, NY",
     "country": "USA",
     "continent": "North America",
@@ -239,7 +239,7 @@
   },
   {
     "rank": "18",
-    "name": "Leicester University Engineering Building",
+    "name": "Leicester University Eng. Building",
     "architect": "James Stirling and James Gowan",
     "city": "Leicester",
     "country": "England",
@@ -477,7 +477,7 @@
   },
   {
     "rank": "35",
-    "name": "Hong Kong and Shanghai Bank Headquarters",
+    "name": "Hong Kong & Shanghai Bank HQ",
     "architect": "Norman Foster",
     "city": "Hong Kong",
     "country": "China",
@@ -590,7 +590,7 @@
   {
     "rank": "43",
     "name": "Lever House",
-    "architect": "Gordon Bunshaft and Natalie De Blois (SOM)",
+    "architect": "Gordon Bunshaft and Natalie De Blois",
     "city": "New York, NY",
     "country": "USA",
     "continent": "North America",
@@ -771,7 +771,7 @@
   },
   {
     "rank": "56",
-    "name": "The Beinecke Rare Book and Manuscript Library",
+    "name": "The Beinecke Library",
     "architect": "Gordon Bunshaft (SOM)",
     "city": "Yale, New Haven, CT",
     "country": "USA",
@@ -912,7 +912,7 @@
   {
     "rank": "66",
     "name": "Institut Du Monde Arabe",
-    "architect": "Jean Nouvel, Gilbert L\ufffdz\ufffdn\ufffds, Pierre Sorida: Architecture-Studio",
+    "architect": "Architecture-Studio",
     "city": "Paris",
     "country": "France",
     "continent": "Europe",
@@ -1150,7 +1150,7 @@
   {
     "rank": "83",
     "name": "Van Nelle Factory",
-    "architect": "Johannes Brinkman, Leendert Van Der Vlugt, and Mart Stam",
+    "architect": "J. Brinkman, Van Der Vlugt, & M. Stam",
     "city": "Rotterdam",
     "country": "The Netherlands",
     "continent": "Europe",
@@ -1220,7 +1220,7 @@
   {
     "rank": "88",
     "name": "Gamble House",
-    "architect": "Greense & Greene",
+    "architect": "Greene & Greene",
     "city": "Pasadena, CA",
     "country": "USA",
     "continent": "North America",
@@ -1290,7 +1290,7 @@
   {
     "rank": "93",
     "name": "Free University of Berlin",
-    "architect": "Candilis-Josic-Woods and Manfred Schiedhelm",
+    "architect": "Candilis,Josic,Woods & Schiedhelm",
     "city": "Berlin",
     "country": "Germany",
     "continent": "Europe",

@@ -79,7 +79,7 @@
     rawFile.send(null);
   }
 
-  function ping() {
+  setInterval(function() {
     var color = colors[Math.floor(Math.random() * colors.length)];
     readTextFile("./json/buildings.json", function(text) {
       var building = JSON.parse(text);
@@ -87,10 +87,6 @@
       var color = colors[Math.floor(Math.random() * colors.length)];
       globe.plugins.pings.add(building[i].lon, building[i].lat, { color: '#000000', ttl: 5000, angle:  5 });
     });
-  }
-
-  setInterval(function() {
-    ping();
   }, 50);
 
   // setInterval(function() {

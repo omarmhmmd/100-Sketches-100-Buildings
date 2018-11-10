@@ -70,7 +70,7 @@ h1 {
   overflow: hidden;
   position: relative;
   font-family: helvetica;
-  background-color: var(--main-bg-color);;
+  background-color: var(--main-bg-color);
   border-bottom: 1px solid #000000;
   width: 100vw;
   height: 7%;
@@ -115,7 +115,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  width: 90vw;
+  width: 95vw;
+  align-items: center;
 }
 
 #globeLink {
@@ -146,7 +147,7 @@ img {
 }
 
 input {
-  width: 90vw;
+  width: 95vw;
 }
 
 #slider {
