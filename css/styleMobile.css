@@ -30,6 +30,17 @@
     font-size:5vw;
   }
 
+  #title {
+    display:none;
+  }
+
+  #title-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+  }
+
   .description {
     width: 90vw;
     font-size: 3vw;
@@ -46,7 +57,6 @@
   #topRect:hover #title {
     border-bottom: 0px solid black;
   }
-
 
   #topRect:hover #pText {
     display: none;
@@ -68,7 +78,6 @@
     line-height: 8vw;
   }
 
-
   img {
     width: 100%;
   }
@@ -80,5 +89,16 @@
   #content-rank p {
     font-size: 10vw;
     background-color: var(--main-bg-color);;
+  }
+
+  #slider {
+    height: 0.75vh;
+    border-radius: 10vw;
+  }
+
+  #slider::-webkit-slider-thumb {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
   }
 }

@@ -1,7 +1,7 @@
 // NO SCROLL ON MOBILE //
-$(document).bind("touchmove", function(e) {
-  e.preventDefault();
-});
+// $(document).bind("touchmove", function(e) {
+//   e.preventDefault();
+// });
 // END NO SCROLL ON MOBILE //
 
 var num = 1;
@@ -27,20 +27,20 @@ new Vue({
         this.images.building = 'building0' + this.value + '.jpg'
       }
     },
-    // setColor: function() {
-    //   var colors = ['#bfff00', '#ffd700']
-    //   var body = document.querySelector('body')
-    //
-    //   var randomColor =  Math.floor(Math.random() * 2);
-    //   console.log(colors[0]);
-    //
-    //   if (randomColor == 0) {
-    //     body.style.setProperty('--main-bg-color',colors[0])
-    //   }
-    //   else if (randomColor == 1) {
-    //     body.style.setProperty('--main-bg-color', colors[1])
-    //   }
-    // }
+    setColor: function() {
+      // var colors = ['#bfff00', '#ffd700']
+      // var body = document.querySelector('body')
+      //
+      // var randomColor =  Math.floor(Math.random() * 2);
+      // console.log(colors[0]);
+      //
+      // if (randomColor == 0) {
+      //   body.style.setProperty('--main-bg-color',colors[0])
+      // }
+      // else if (randomColor == 1) {
+      //   body.style.setProperty('--main-bg-color', colors[1])
+      // }
+    }
   },
   mounted() {
     $.getJSON('./json/buildings.json', json => {

@@ -86,6 +86,10 @@ h1 {
   height: 6vh;
 }
 
+#title-mobile {
+  display: none;
+}
+
 #topRect:hover #title {
   border-bottom: 1px solid black;
 }
