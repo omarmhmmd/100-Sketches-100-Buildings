@@ -188,16 +188,16 @@ input {
   -webkit-appearance: none;
   background: var(--main-bg-color);;
   border: 1px solid black;
-  height: 5px;
-  border-radius: 100px;
+  height: 0.85vh;
+  border-radius: 10vw;
   outline: none;
 }
 
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 1.25vw;
+  height: 1.25vw;
   border-radius: 50%;
   border: 1px solid black;
   background: var(--main-bg-color);;
