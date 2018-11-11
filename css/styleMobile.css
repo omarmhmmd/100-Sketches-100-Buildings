@@ -1,0 +1,84 @@
+@media (max-width: 576px) {
+  /**** INDEX ****/
+  #globe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #rotatingGlobe {
+    width: 100vw;
+    height: 100vw;
+    cursor: move;
+  }
+
+  h1 {
+    font-family: helvetica;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 12vw;
+  }
+  canvas {
+    padding-top: 10%;
+    padding-left: 15%;
+  }
+  /**** END INDEX ****/
+
+  /**** SKETCHES ****/
+  #topRect {
+    font-size:5vw;
+  }
+
+  .description {
+    width: 90vw;
+    font-size: 3vw;
+  }
+
+  #pText {
+    display: none;
+    margin-top:2vw;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--main-bg-color); */
+  }
+
+  #topRect:hover #title {
+    border-bottom: 0px solid black;
+  }
+
+
+  #topRect:hover #pText {
+    display: none;
+  }
+
+  #container-sketches {
+    height: 80vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .overlay {
+    width:100%;
+  }
+
+  .text {
+    font-size: 4.5vw;
+    line-height: 8vw;
+  }
+
+
+  img {
+    width: 100%;
+  }
+
+  #continents img {
+    width: 20vh;
+  }
+
+  #content-rank p {
+    font-size: 10vw;
+    background-color: var(--main-bg-color);;
+  }
+}

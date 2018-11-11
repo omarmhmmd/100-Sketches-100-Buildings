@@ -26,6 +26,16 @@
   //   fill: '#ffd700'
   // }));
 
+  var colors = ['#ADC65A', '#ffd700', '#FF9D4B']
+  var body = document.querySelector('body')
+
+  var randomColor =  Math.floor(Math.random() * 3);
+  var globeColor = colors[randomColor]
+
+  body.style.setProperty('--main-bg-color', globeColor)
+  // document.body.style.backgroundColor = globeColor;
+
+
   globe.loadPlugin(planetaryjs.plugins.earth({
     topojson: {
       file: 'json/world-110m.json'
@@ -34,10 +44,10 @@
       fill: 'black'
     },
     land: {
-      fill: '#ffffff'
+      fill: globeColor
     },
     borders: {
-      stroke: '#ffffff'
+      stroke: globeColor
     }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.

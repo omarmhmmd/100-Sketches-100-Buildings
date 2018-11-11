@@ -9,9 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleMobile.css">
   <script type='text/javascript'  src="json/buildings.json"></script>
-  <script type='text/javascript'  src="js/100Sketches.js"></script>
   <script type='text/javascript' src='lib/planetaryjs.js'></script>
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
 
   <body>
@@ -20,13 +23,11 @@
         <h1>
           <a href="./sketches.html"><span class="spacing">1</span>00SKETCHES</a>
           <a target="_blank"href="https://www.thenowinstitute.org/research/33-100-buildings"><span class="spacing">1</span>00BUILDINGS</a>
-          <!-- <a style="font-size: 30px; font-weight: normal; padding-left: 20px;"target="_blank" href="https://washer-dryer-projects.com/exhibitions/100-sketches"><br>WASHER / DRYER PROJECTS EXHIBITION</a> -->
         </h1>
-        <canvas id='rotatingGlobe' width='400' height='400'style='width: 400px; height: 400px; cursor: move;'></canvas>
+        <canvas id='rotatingGlobe' width='400' height='400'></canvas>
       </div>
-      <!-- <img src="images/building001.jpg" alt=""> -->
     </div>
-
   </body>
-<script src="js/globe.js" charset="utf-8"></script>
+
+  <script src="js/globe.js" charset="utf-8"></script>
 </html>
