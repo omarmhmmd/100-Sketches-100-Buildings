@@ -26,14 +26,14 @@
   //   fill: '#ffd700'
   // }));
 
-  // var colors = ['#ADC65A', '#ffd700', '#FF9D4B']
-  // var body = document.querySelector('body')
-  //
-  // var randomColor =  Math.floor(Math.random() * 3);
-  // var globeColor = colors[randomColor]
-  //
-  // body.style.setProperty('--main-bg-color', globeColor)
-  // // document.body.style.backgroundColor = globeColor;
+  var colors = ['#EC4D4A', '#F18038', '#68E1FB', '#97E679', '#F5D94A', '#FF89D6']
+  var body = document.querySelector('body')
+
+  var randomColor =  Math.floor(Math.random() * 6);
+  var globeColor = colors[randomColor]
+
+  body.style.setProperty('--main-bg-color', globeColor)
+  // document.body.style.backgroundColor = globeColor;
 
 
   globe.loadPlugin(planetaryjs.plugins.earth({
@@ -44,12 +44,10 @@
       fill: 'black'
     },
     land: {
-      fill: '#ffd700'
-      // fill: globeColor
+      fill: globeColor
     },
     borders: {
-      stroke: '#ffd700'
-      // stroke: globeColor
+      stroke: globeColor
     }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
