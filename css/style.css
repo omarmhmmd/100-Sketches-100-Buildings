@@ -1,11 +1,13 @@
 :root {
   --main-bg-color: #ffd700;
+  --main-color: black;
 }
 
 /**** INDEX ****/
 body {
   background-color: var(--main-bg-color);
   overflow: hidden;
+  color: var(--main-color);
 }
 
 .underline {
@@ -21,7 +23,7 @@ body {
 }
 
 a {
-  color: black;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -73,7 +75,7 @@ h1 {
   flex-direction: column;
   font-family: helvetica;
   background-color: var(--main-bg-color);
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--main-color);
   width: 100vw;
   font-size: 1.5vw;
   z-index: 2;
@@ -91,16 +93,17 @@ h1 {
 }
 
 #topRect:hover #title {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-color);
 }
 
 #topRect:hover #pText {
   display: flex;
-  height: 18vw;
+  height: 21vw;
 }
 
 .description {
   width: 45%;
+  line-height: 1.5vw;
   font-size: 1.25vw;
 }
 
@@ -127,7 +130,7 @@ h1 {
 }
 
 #content-rank p {
-  border: 1px solid black;
+  border: 1px solid var(--main-color);
   font-size: 5.5vw;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
@@ -159,7 +162,7 @@ h1 {
 
 .overlay:hover {
   background-color: var(--main-bg-color);;
-  outline: 1px solid black;
+  outline: 1px solid var(--main-color);
   cursor: help;
 }
 
@@ -191,7 +194,7 @@ input {
 #slider {
   -webkit-appearance: none;
   background: var(--main-bg-color);;
-  border: 1px solid black;
+  border: 1px solid var(--main-color);
   height: 0.85vh;
   border-radius: 10vw;
   outline: none;
@@ -203,7 +206,7 @@ input {
   width: 1.25vw;
   height: 1.25vw;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--main-color);
   background: var(--main-bg-color);;
   cursor: pointer;
 }

@@ -74,12 +74,20 @@ new Vue({
         this.country = "SouthAmerica.svg"
         // body.style.setProperty('--main-bg-color', '#93C8CF')
       }
+      else  {
+        this.country = "Africa.svg"
+        // body.style.setProperty('--main-bg-color', '#93C8CF')
+      }
       if (val < 10) {
         this.value = String(this.value).padStart(2, 0);
       }
       if (val == 100) {
         this.images.building = 'building' + this.value + '.jpg'
-      } else {
+      }
+      else if (val == 101) {
+        this.images.building = 'building101.jpg'
+      }
+      else {
         this.images.building = 'building0' + this.value + '.jpg'
       }
     }

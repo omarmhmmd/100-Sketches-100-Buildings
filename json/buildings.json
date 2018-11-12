@@ -1398,5 +1398,19 @@
     "yearStart": "1995",
     "yearFin": "2002",
     "image": "100"
+  },
+  {
+    "rank": "101",
+    "name": "N/A",
+    "architect": "N/A",
+    "city": "N/A",
+    "country": "Africa",
+    "continent": "Africa",
+    "geo": "35 27' 04'' N 139 38' 50'' E",
+    "lat": "0.00",
+    "lon": "0.00",
+    "yearStart": "1900",
+    "yearFin": "2000",
+    "image": "100"
   }
 ]
