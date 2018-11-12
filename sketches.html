@@ -72,8 +72,13 @@
         <div id="continents">
           <img v-bind:src="'./svg/' + country" alt="">
         </div>
+        <div id="inputSliderMobile">
+          <input type="range" min="1" max="101" v-model="value" id="slider">
+        </div>
       </div>
-      <input type="range" min="1" max="101" v-model="value" id="slider">
+      <div id="inputSlider-Desktop">
+        <input type="range" min="1" max="101" v-model="value" id="slider">
+      </div>
     </div>
   </body>
 

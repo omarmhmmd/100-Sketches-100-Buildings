@@ -187,6 +187,10 @@ img {
   width: 100%;
 }
 
+#inputSliderMobile {
+  display: none;
+}
+
 input {
   width: 95vw;
 }
@@ -203,8 +207,8 @@ input {
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.25vw;
-  height: 1.25vw;
+  width: 1.5vw;
+  height: 1.5vw;
   border-radius: 50%;
   border: 1px solid var(--main-color);
   background: var(--main-bg-color);;
