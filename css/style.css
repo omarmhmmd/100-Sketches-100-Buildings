@@ -39,17 +39,11 @@ a:hover {
   align-items: center;
 }
 
-h1 {
-  font-family: helvetica;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 7vw;
-}
-
 #globe {
   width: 90vw;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
 }
@@ -58,6 +52,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family: helvetica;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+#firstLink {
+  width: 100%;
 }
 
 #rotatingGlobe {

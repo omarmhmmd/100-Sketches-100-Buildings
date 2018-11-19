@@ -17,7 +17,7 @@
   <title>100 Sketches 100 Buildings</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <script src="http://localhost:51133/livereload.js" charset="utf-8"></script>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
   <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
   <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -32,11 +32,11 @@
 <body>
   <div id="container">
     <div id="globe">
-      <h1 id="links">
-          <a onclick = "showSketches()"><span class="spacing">1</span>00SKETCHES</a>
-          <a target="_blank"href="https://www.thenowinstitute.org/research/33-100-buildings"><span class="spacing">1</span>00BUILDINGS</a>
-          <a target="_blank" href="https://washer-dryer-projects.com/exhibitions/100-sketches">The Exhibition</a>
-        </h1>
+      <div id="links">
+        <div id = "firstLink"><a onclick = "showSketches()"><span class="spacing">1</span>00SKETCHES</a></div>
+        <div><a target="_blank"href="https://www.thenowinstitute.org/research/33-100-buildings"><span class="spacing">1</span>00BUILDINGS</a></div>
+        <div><a target="_blank" href="https://washer-dryer-projects.com/exhibitions/100-sketches">The Exhibition</a></div>
+      </div>
       <canvas id='rotatingGlobe' width='400' height='400'></canvas>
     </div>
   </div>
